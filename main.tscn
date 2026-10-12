@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://drldk3awn2dgx"]
+
+[ext_resource type="PackedScene" uid="uid://ii11o1gas3p8" path="res://plataforma.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://n8x731h0asle" path="res://espinho.tscn" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dt61w8p1s4lwg" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cabem25plfm2q" path="res://barrier.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://kouugktp1ii" path="res://inimigo.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node2D" unique_id=932464874]
+
+[node name="Espinho" parent="." unique_id=1532005246 instance=ExtResource("1_1bvp3")]
+position = Vector2(1568, 344)
+collision_layer = 8
+
+[node name="Node2D" parent="." unique_id=185487879 instance=ExtResource("1_0xm2m")]
+position = Vector2(618, 223)
+collision_layer = 4
+collision_mask = 3
+
+[node name="Player" parent="." unique_id=373260211 instance=ExtResource("1_ig7tw")]
+position = Vector2(182, 268)
+collision_mask = 14
+
+[node name="Node2D2" parent="." unique_id=747644135 instance=ExtResource("1_0xm2m")]
+position = Vector2(1071, 430)
+scale = Vector2(5, 1)
+collision_layer = 4
+collision_mask = 3
+
+[node name="Node2D3" parent="." unique_id=332746330 instance=ExtResource("1_0xm2m")]
+position = Vector2(863, -48)
+collision_layer = 4
+collision_mask = 3
+
+[node name="StaticBody2D" parent="." unique_id=2103895297 instance=ExtResource("3_h2yge")]
+position = Vector2(1299, 79)
+collision_layer = 4
+collision_mask = 3
+
+[node name="Inimigo" parent="." unique_id=546427610 instance=ExtResource("5_lquwl")]
+position = Vector2(656, 62)
+scale = Vector2(3, 3)

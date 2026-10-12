@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dt61w8p1s4lwg"]
+
+[ext_resource type="Script" uid="uid://cdci6wpyfsjsj" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://b3wghm75uxu85" path="res://assets/idle.png" id="2_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5thp"]
+size = Vector2(131, 131)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4viwo"]
+size = Vector2(129, 129)
+
+[node name="Player" type="CharacterBody2D" unique_id=373260211]
+script = ExtResource("1_onrkg")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=664671279]
+collision_mask = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1673368941]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_q5thp")
+debug_color = Color(0.9538265, 0.21317598, 0.10299111, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1544712601]
+position = Vector2(0.49999225, -0.50000346)
+scale = Vector2(2.046875, 2.0468748)
+texture = ExtResource("2_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705248992]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_4viwo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=447315763]
+limit_bottom = 1000
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.25
+drag_top_margin = 0.4
+drag_right_margin = 0.25
+drag_bottom_margin = 0.4

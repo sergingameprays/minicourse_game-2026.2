@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://kouugktp1ii"]
+
+[ext_resource type="Script" uid="uid://c50wv7w12rddh" path="res://inimigo.gd" id="1_0b8xr"]
+[ext_resource type="Texture2D" uid="uid://bonnb7xgmalxd" path="res://assets/enemy.png" id="2_g45jm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4viwo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4viwo"]
+atlas = ExtResource("2_g45jm")
+region = Rect2(0, 0, 48, 48)
+
+[node name="Inimigo" type="CharacterBody2D" unique_id=546427610]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_0b8xr")
+
+[node name="left" type="RayCast2D" parent="." unique_id=38142824]
+position = Vector2(-17, -25)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1506769854]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_4viwo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1242781179]
+position = Vector2(0, -6)
+texture = SubResource("AtlasTexture_4viwo")
+
+[node name="right" type="RayCast2D" parent="." unique_id=305248311]
+position = Vector2(16, -25)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
