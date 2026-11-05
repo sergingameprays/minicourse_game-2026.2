@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var dano: int = 1
+@export var dano: int = 1
 @onready var hitbox: CollisionShape2D = $hitbox
 
 # Called when the node enters the scene tree for the first time.

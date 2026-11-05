@@ -28,7 +28,7 @@ collision_layer = 4
 collision_mask = 3
 
 [node name="Node2D3" parent="." unique_id=332746330 instance=ExtResource("1_0xm2m")]
-position = Vector2(863, -48)
+position = Vector2(823, -53)
 collision_layer = 4
 collision_mask = 3
 

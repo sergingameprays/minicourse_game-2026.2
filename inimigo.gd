@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+@onready var dano = 2
 const SPEED = 8000.0
 var direction = 1
 
@@ -12,8 +12,12 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	if not (ray_left.is_colliding() and ray_right.is_colliding()):
-		direction *= -1 
+	if direction == 1:
+		if not ray_right.is_colliding():
+			direction = -1
+	else: 
+		if not ray_left.is_colliding():
+			direction = 1
 	
 	velocity.x = SPEED * delta * direction
 	

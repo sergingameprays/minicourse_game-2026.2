@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bv502xu6lqeqd"]
+
+[ext_resource type="Script" uid="uid://d4f8thdi2mr4p" path="res://arma.gd" id="1_vp40w"]
+
+[node name="arma" type="Node2D" unique_id=436102898]
+script = ExtResource("1_vp40w")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1957885789]
