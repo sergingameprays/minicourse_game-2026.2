@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dt61w8p1s4lwg"]
 
-[ext_resource type="Script" uid="uid://cdci6wpyfsjsj" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://cdci6wpyfsjsj" path="res://entities/player.gd" id="1_3hik6"]
 [ext_resource type="Texture2D" uid="uid://b3wghm75uxu85" path="res://assets/idle.png" id="2_onrkg"]
-[ext_resource type="PackedScene" uid="uid://bv502xu6lqeqd" path="res://arma.tscn" id="3_hqtel"]
-[ext_resource type="PackedScene" uid="uid://d10jovkktal1e" path="res://bullet.tscn" id="4_sweqy"]
+[ext_resource type="PackedScene" uid="uid://bv502xu6lqeqd" path="res://entities/arma.tscn" id="3_hqtel"]
+[ext_resource type="PackedScene" uid="uid://d10jovkktal1e" path="res://entities/bullet.tscn" id="4_sweqy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5thp"]
 size = Vector2(131, 131)
@@ -12,7 +12,7 @@ size = Vector2(131, 131)
 size = Vector2(129, 129)
 
 [node name="Player" type="CharacterBody2D" unique_id=373260211]
-script = ExtResource("1_onrkg")
+script = ExtResource("1_3hik6")
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=664671279]
 collision_mask = 10

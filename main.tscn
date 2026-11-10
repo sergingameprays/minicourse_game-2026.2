@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://drldk3awn2dgx"]
 
-[ext_resource type="PackedScene" uid="uid://ii11o1gas3p8" path="res://plataforma.tscn" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://n8x731h0asle" path="res://espinho.tscn" id="1_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://dt61w8p1s4lwg" path="res://player.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://cabem25plfm2q" path="res://barrier.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://kouugktp1ii" path="res://inimigo.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ii11o1gas3p8" path="res://map/plataforma.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://n8x731h0asle" path="res://map/espinho.tscn" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dt61w8p1s4lwg" path="res://entities/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cabem25plfm2q" path="res://map/barrier.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://kouugktp1ii" path="res://entities/inimigo.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=932464874]
 
