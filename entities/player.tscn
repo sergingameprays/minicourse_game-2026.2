@@ -42,7 +42,7 @@ drag_right_margin = 0.25
 drag_bottom_margin = 0.4
 
 [node name="arma" parent="." unique_id=436102898 instance=ExtResource("3_hqtel")]
-position = Vector2(-79, 0)
+position = Vector2(-82, 27)
 bullet_scene = ExtResource("4_sweqy")
 
 [connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]

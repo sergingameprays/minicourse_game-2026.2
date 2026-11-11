@@ -11,6 +11,7 @@ var pos : Vector2
 func _ready() -> void:
 	global_position = pos
 	body_entered.connect(_on_body_entered)
+	area_entered.connect(_on_area_entered)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -20,13 +21,12 @@ func _process(delta: float) -> void:
 		return
 	position.x += direction * speed * delta
 
-func _on_body_entered(body : Node) -> void: 
-	if body.get_collision_layer_value(2):
-		if body.has_method("tomar_dano"):
-			body.tomar_dano(dano)
+func _on_body_entered(body : Node) -> void:
+	if body.get_collision_layer_value(3):
 		queue_free()
-	elif body.get_collision_layer_value(3):
-		queue_free()
-		
-		
-		
+
+func _on_area_entered(area: Area2D) -> void:
+	var inimigo = area.get_parent()
+	if inimigo and inimigo.has_method("tomar_dano_inimigo"):
+		inimigo.tomar_dano_inimigo(dano)
+	queue_free()

@@ -39,10 +39,7 @@ func _physics_process(delta: float) -> void:
 		if (direction != facing):
 			arma.position.x = -arma.position.x
 		facing = direction
-			
-		
-			
-				
+
 	if global_position.y > 1500:
 		get_tree().reload_current_scene()
 	else:

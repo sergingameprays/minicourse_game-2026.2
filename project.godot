@@ -50,6 +50,7 @@ disparo={
 2d_physics/layer_3="Mapa"
 2d_physics/layer_4="Espinhos"
 2d_physics/layer_5="tiro"
+2d_physics/layer_6="hurtbox Inimigo"
 
 [physics]
 
