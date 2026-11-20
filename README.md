@@ -19,12 +19,12 @@ You can get the source code in two ways: by cloning the repository via terminal 
 1. Open your terminal (Linux/macOS) or Git Bash/Command Prompt (Windows).
 2. Clone this repository using the command below:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
+   git clone [https://github.com/sergingameprays/minicourse_game-2026.2.git](https://github.com/sergingameprays/minicourse_game-2026.2.git)
 
     Navigate into the project directory:
     Bash
 
-    cd YOUR_REPOSITORY
+    cd minicourse_game-2026.2
 
 ### Option 2: Via .zip Download
 
@@ -44,4 +44,4 @@ You can get the source code in two ways: by cloning the repository via terminal 
 
 5. Wait for Godot to finish importing the project assets (textures, audio, and scenes) for the first time.
 
-6. Press F5 (or click the Play ▶️ icon in the top-right corner of the editor) to start the game.
+6. Press F5 (or click the Play icon in the top-right corner of the editor) to start the game.
